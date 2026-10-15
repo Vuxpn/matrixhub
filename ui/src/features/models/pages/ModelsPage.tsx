@@ -29,7 +29,8 @@ export function ModelsPage() {
         <Flex
           flex="0 0 24%"
           wrap="nowrap"
-          gap="xl"
+          pos="relative"
+          pe="xl"
           miw={0}
         >
           <Box
@@ -40,8 +41,11 @@ export function ModelsPage() {
           </Box>
 
           <Box
-            mt="sm"
+            pos="absolute"
+            top="var(--mantine-spacing-sm)"
+            bottom={0}
             style={{
+              insetInlineEnd: 0,
               borderInlineEnd: '1px solid var(--mantine-color-gray-3)',
             }}
           />
